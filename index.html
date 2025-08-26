@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunchala Rajesh | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Animated Gradient Background */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(-45deg, #0f0f1c, #4aa0c5, #6a0dad, #00f2fe);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .highlight {
+     background: linear-gradient(270deg, #00f2fe, #4facfe, #ff6ec4, #f9f047);
+     background-size: 800% 800%;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation: textGradient 6s ease infinite;
+    }
+    @keyframes textGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .navbar-brand, .nav-link { color: white !important; }
+    main { flex: 1; }
+    footer {
+      background-color: #0f0f1c;
+      color: #ffffff;
+      padding: 1rem 0;
+      width: 100%;
+      text-align: center;
+      margin-top: auto;
+    }
+    .softskills-box {
+      background: linear-gradient(to right, #222, #333);
+      border-radius: 10px;
+      padding: 1rem;
+      font-family: 'Courier New', monospace;
+      color: white;
+      box-shadow: 0 0 10px rgba(119, 204, 217, 0.3);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .skills-container { overflow-x: auto; white-space: nowrap; padding: 1rem 0; -ms-overflow-style: none; scrollbar-width: none; }
+    .skills-container::-webkit-scrollbar { display: none; }
+    .skills-container .skill { display: inline-block; margin: 0 20px; text-align: center; }
+    .skills-container img { width: 60px; height: 60px; transition: transform 0.3s ease; }
+    .skills-container img:hover { transform: scale(1.2); filter: drop-shadow(0 0 10px aqua); }
+    .timeline { border-left: 4px solid #00ffff; padding-left: 20px; }
+    .timeline h5 { color: #00ffff; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      transition: all 0.4s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+      border: 1px solid rgba(0, 255, 255, 0.5);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <span class="highlight">KR</span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- Hero Section -->
+<section id="home" class="min-vh-100 d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12 text-center">
+        <h1>Hello, I'm <span class="highlight">Kunchala Rajesh</span></h1>
+        <h3 class="highlight">Python Developer | Data Analyst | Aspiring ML Engineer</h3>
+        <p class="mt-3">Final-year B.Tech CSE (AI & ML) student passionate about building Python applications, Flask tools, and AI-driven solutions. I also craft insightful Tableau dashboards and data visualizations to support decision-making.</p>
+        
+        <!-- Resume Buttons -->
+        <a href="https://drive.google.com/file/d/1rjlh2ByxhXBFgNXt3oynvgZRtFfKppnT/view" class="btn btn-info mt-3 me-2" download>
+          <i class="fas fa-file-download"></i> Download Resume
+        </a>
+        <a href="https://drive.google.com/file/d/1rjlh2ByxhXBFgNXt3oynvgZRtFfKppnT/view" class="btn btn-outline-light mt-3" target="_blank">
+          <i class="fas fa-eye"></i> View Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <h2 class="highlight">About Me</h2>
+    <p>I’m Rajesh, a final-year Computer Science Engineering student specializing in AI & ML. I enjoy solving problems with Python, creating web apps using Flask, and designing data-driven dashboards with Tableau. My passion lies in leveraging AI and data analytics to build impactful solutions that combine functionality with purpose.</p>
+    <div class="softskills-box mt-3 text-start">
+const coder = {
+  name: 'Kunchala Rajesh',
+  skills: ['Python', 'C', 'SQL', 'Flask', 'Tableau'],
+  hardWorker: true,
+  quickLearner: true,
+  problemSolver: true,
+  hireable: function() {
+    return (this.hardWorker && this.problemSolver && this.skills.length >= 5);
+  }
+};
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center highlight mb-4">Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><p>Python</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"><p>C</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><p>SQL</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"><p>Flask</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><p>HTML</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><p>CSS</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"><p>GitHub</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg"><p>Tableau</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="text-center highlight mb-4">Experience</h2>
+    <div class="timeline">
+      <h5>Data Analytics Virtual Internship – SmartBridge</h5>
+      <p><strong>Duration:</strong> 2025<br><strong>Role:</strong> Built Tableau dashboards analyzing economic freedom trends, providing actionable insights.</p>
+
+      <h5>AI & ML Virtual Internship – Eduskills</h5>
+      <p><strong>Duration:</strong> 2025<br><strong>Role:</strong> Applied AI/ML concepts to projects and case studies.</p>
+
+      <h5>Python & SQL Certifications – HackerRank</h5>
+      <p><strong>Duration:</strong> 2025<br><strong>Role:</strong> Strengthened coding proficiency with problem-solving exercises and challenges.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="py-5">
+  <div class="container">
+    <h2 class="text-center highlight mb-4">Education</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="p-3 bg-dark text-white rounded">
+          <h5 class="highlight">B.Tech CSE (AI & ML)</h5>
+          <p>RISE Krishna Sai Prakasam Group of Institutions<br><strong>CGPA:</strong> 7.32 (2022–2026)</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 bg-dark text-white rounded">
+          <h5 class="highlight">Intermediate (MPC)</h5>
+          <p>Sri Chaitanya Junior College (2020–2022)<br><strong>Percentage:</strong> 60.3%</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 bg-dark text-white rounded">
+          <h5 class="highlight">SSC</h5>
+          <p>VNG High School (2020)<br><strong>Percentage:</strong> 95%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" style="padding: 4rem 2rem;">
+  <h2 class="text-center highlight mb-4">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Pizza Billing System (Flask)</h3>
+      <p>Billing app with add-ons and GST auto-calculation.<br><a href="https://github.com/rajesh-4250/pizza-billing-flask" target="_blank">View Project</a></p>
+    </div>
+    <div class="project-card">
+      <h3>Bank Management System (Python CLI)</h3>
+      <p>Account creation/deletion, deposits/withdrawals, balance checks.<br><a href="https://github.com/rajesh-4250/bank-management-system" target="_blank">View Project</a></p>
+    </div>
+    <div class="project-card">
+      <h3>Multimodal AI Chatbot</h3>
+      <p>AI chatbot with text, voice, and image interaction using GPT multimodal models.<br><a href="https://github.com/rajesh-4250/multimodal-ai-chatbot" target="_blank">View Project</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center highlight mb-4">Let's Connect!</h2>
+    <p class="text-center mb-4">Interested in collaborating? Reach out via email or connect on my socials below.</p>
+    <div class="text-center mt-4">
+      <a href="mailto:rajeshkunchala673@gmail.com" class="text-white me-3" title="Email Me"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/rajesh-4250" target="_blank" class="text-white me-3"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/kunchala-rajesh-3406892ba" target="_blank" class="text-white"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Kunchala Rajesh. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
